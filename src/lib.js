@@ -1,6 +1,7 @@
 import Calendar from './components/Calendar';
 import DatePicker from './components/DatePicker';
 import Popover from './components/Popover';
+import CalendarNav from './components/CalendarNav';
 import getLocaleDefaults from './utils/locales';
 import defaults, { mergeDefaults } from './utils/defaults';
 
@@ -8,6 +9,7 @@ const components = {
   Calendar,
   DatePicker,
   Popover,
+  CalendarNav,
 };
 
 const setupCalendar = userDefaults => {
@@ -31,7 +33,7 @@ const VCalendar = {
 
 export default VCalendar;
 
-export { setupCalendar, Calendar, DatePicker, Popover };
+export { setupCalendar, Calendar, DatePicker, Popover, CalendarNav };
 
 // Use automatically when global Vue instance detected
 if (typeof window !== 'undefined' && window.Vue) {
